@@ -55,4 +55,5 @@ public class SoldadoService {
                 .collect(Collectors.toList());
         return soldadoStream;
     }
+
 }

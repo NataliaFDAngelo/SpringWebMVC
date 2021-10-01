@@ -55,12 +55,10 @@ public class SoldadoController {
         return ResponseEntity.ok().build();
     }
 
-
     @GetMapping
     public ResponseEntity<List<SoldadoListResponse>> buscarSoldados() {
         List<SoldadoListResponse> soldadoListResponses = soldadoService.buscarSoldados();
         return ResponseEntity.status(HttpStatus.OK).body(soldadoListResponses);
     }
-
 
 }

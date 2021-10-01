@@ -1,6 +1,5 @@
 package br.com.dio.hateoas.controller.response;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,6 +15,5 @@ public class SoldadoListResponse extends RepresentationModel {
     private String nome;
 
     private String raca;
-
 
 }

@@ -21,7 +21,7 @@ public class FilterJava implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain)
             throws IOException, ServletException {
-        logger.info("Chegou no portão do castelo");
+        logger.info("Chegou no portão do castelo.");
         HttpServletRequest req = (HttpServletRequest) request;
         Enumeration<String> headerNames = req.getHeaderNames();
         Map<String, String> mapHeaders = Collections.list(headerNames)
@@ -34,6 +34,7 @@ public class FilterJava implements Filter {
             res.sendError(403);
             return;
         }
-        logger.info("Saiu do portão do castelo");
+        logger.info("Saiu do portão do castelo.");
     }
+
 }

@@ -28,4 +28,5 @@ public class SoldadoEntity {
     private String arma;
 
     private String status;
+
 }

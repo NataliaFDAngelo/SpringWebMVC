@@ -22,5 +22,4 @@ public class SoldadoResponse extends RepresentationModel {
 
     private String status;
 
-
 }
